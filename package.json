@@ -1,0 +1,29 @@
+{
+  "name": "cf-node-sample",
+  "version": "1.0.0",
+  "description": "A sample Node.js project showing usage of CF env vars",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charyorde/cf-node-sample"
+  },
+  "keywords": [
+    "Cloud",
+    "Foundry",
+    "VCAP_SERVICES",
+    "Node"
+  ],
+  "author": "dreyemi@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charyorde/cf-node-sample/issues"
+  },
+  "homepage": "https://github.com/charyorde/cf-node-sample",
+  "dependencies": {
+    "cfenv": "^1.0.0",
+    "express": "^4.12.4"
+  }
+}
