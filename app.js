@@ -24,9 +24,9 @@ app.get('/', function(req, res) {
 })
 
 app.get('/vcap_application', function(req, res) {
-  res.send(cfenv.app)
+  res.json(cfenv.app)
 })
 
 app.get('/vcap_services', function(req, res) {
-  res.send(cfenv.services)
+  res.json(cfenv.services)
 })
