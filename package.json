@@ -24,6 +24,10 @@
   "homepage": "https://github.com/charyorde/cf-node-sample",
   "dependencies": {
     "cfenv": "^1.0.0",
-    "express": "^4.12.4"
+    "connect-redis": "^2.3.0",
+    "cors": "^2.7.1",
+    "express": "^4.12.4",
+    "express-session": "^1.11.2",
+    "redis": "^0.12.1"
   }
 }

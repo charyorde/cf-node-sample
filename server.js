@@ -9,7 +9,7 @@ var server = app.listen(config.port, function () {
   var port = server.address().port
 
   console.log('Running in ' + config.mode + ' environment.')
-  console.log('Serving static files at http://%s:%s', host, port)
+  console.log('Serving app at http://%s:%s', host, port)
 
 })
 

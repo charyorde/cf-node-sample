@@ -21,7 +21,15 @@ var config = {
     redis: {
       host: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.hostname : undefined,
       port: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.port : undefined,
-      password: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.password : undefined
+      password: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.password : undefined,
+      username: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.username : undefined
+    },
+    rabbitmq: {
+      host: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.hostname : undefined,
+      port: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.port : undefined,
+      password: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.password : undefined,
+      username: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.username : undefined,
+      uri: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.uri : undefined
     }
   },
   production: {
@@ -33,8 +41,16 @@ var config = {
     redis: {
       host: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.hostname : undefined,
       port: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.port : undefined,
-      password: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.password : undefined
+      password: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.password : undefined,
+      username: !appEnv.isLocal ? appEnv.services.redis28[0].credentials.username : undefined
     },
+    rabbitmq: {
+      host: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.hostname : undefined,
+      port: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.port : undefined,
+      password: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.password : undefined,
+      username: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.username : undefined,
+      uri: !appEnv.isLocal ? appEnv.services.rabbitmq33[0].credentials.uri : undefined
+    }
   }
 };
 module.exports = function(mode) {
